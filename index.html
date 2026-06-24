@@ -1,246 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>BASATECH | Innovation Beyond Boundaries – Zimbabwe</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-<!-- Tailwind + Font Awesome + Google Fonts -->
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <!-- Primary SEO Meta Tags (Zimbabwe-focused) -->
+  <title>BASATECH | Websites in Zimbabwe, Tattoos in Gweru, Seafood & Portraits</title>
+  <meta name="description" content="BASATECH Zimbabwe – websites in Zimbabwe, tattoos in Gweru, seafood in Gweru, canvas portraits in Zimbabwe, ZINARA & ZBC insurance, web apps, printing, and Australian crayfish. Serving Gweru, Harare & nationwide.">
+  <meta name="keywords" content="websites in Zimbabwe, web development Zimbabwe, tattoos in Gweru, tattoo studio Zimbabwe, seafood in Gweru, crayfish Zimbabwe, portraits in Zimbabwe, canvas portraits in Gweru, ZINARA licensing, ZBC licence, printing services Zimbabwe, art studio, BASATECH">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://your-username.github.io/your-repo-name/">
 
-<style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  <!-- Open Graph -->
+  <meta property="og:title" content="BASATECH – Websites, Tattoos, Seafood & Portraits in Zimbabwe">
+  <meta property="og:description" content="Expert websites in Zimbabwe, premium tattoos in Gweru, fresh seafood in Gweru, and custom canvas portraits – all under one roof.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://your-username.github.io/your-repo-name/">
+  <meta property="og:image" content="https://your-username.github.io/your-repo-name/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BASATECH – Websites, Tattoos, Seafood & Portraits in Zimbabwe">
+  <meta name="twitter:description" content="Websites in Zimbabwe, tattoos in Gweru, seafood in Gweru, canvas portraits – all at BASATECH.">
+  <meta name="twitter:image" content="https://your-username.github.io/your-repo-name/og-image.jpg">
+
+  <!-- JSON‑LD Structured Data for Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "BASATECH",
+    "image": "https://your-username.github.io/your-repo-name/og-image.jpg",
+    "description": "BASATECH provides websites in Zimbabwe, tattoos in Gweru, seafood in Gweru, canvas portraits, ZINARA and ZBC insurance, printing and art services.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 24 Bahadur Centre",
+      "addressLocality": "Gweru",
+      "addressRegion": "Midlands",
+      "addressCountry": "ZW"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-19.4631",
+      "longitude": "29.8181"
+    },
+    "telephone": "+263786050237",
+    "openingHours": "Mo-Fr 08:00-17:00",
+    "sameAs": [
+      "https://instagram.com/barrkigroup",
+      "https://facebook.com/barrkigroup",
+      "https://tiktok.com/@barrkigroup"
+    ],
+    "priceRange": "$$",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Zimbabwe"
+    }
   }
-  body {
-    font-family: 'Inter', sans-serif;
-    background-color: #050505;
-    color: #ecedee;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-  }
-  .glass-card {
-    background: rgba(20, 20, 30, 0.65);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(59,130,246,0.25);
-    border-radius: 28px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  }
-  .glass-nav {
-    background: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(16px);
-    border-bottom: 1px solid rgba(59,130,246,0.5);
-  }
-  .neon-text {
-    text-shadow: 0 0 6px rgba(59,130,246,0.7), 0 0 12px rgba(37,99,235,0.4);
-  }
-  .btn-primary {
-    background: linear-gradient(95deg, #2563eb 0%, #1e3a8a 100%);
-    transition: transform 0.2s, box-shadow 0.2s;
-    border: none;
-  }
-  .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px -5px rgba(37,99,235,0.5);
-  }
-  .btn-outline-light {
-    border: 1.5px solid rgba(255,255,255,0.3);
-    background: rgba(0,0,0,0.3);
-    backdrop-filter: blur(4px);
-  }
-  .btn-outline-light:hover {
-    background: white;
-    color: black;
-    border-color: white;
-  }
-  .section-title {
-    background: linear-gradient(135deg, #f8f9fa 20%, #93c5fd 80%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-  .zim-pattern {
-    background-image: repeating-linear-gradient(45deg, rgba(59,130,246,0.02) 0px, rgba(59,130,246,0.02) 2px, transparent 2px, transparent 8px);
-  }
-  .reveal {
-    opacity: 0;
-    transform: translateY(42px);
-    transition: opacity 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.1), transform 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.1);
-  }
-  .reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  .contact-card {
-    background: rgba(15, 15, 20, 0.8);
-    backdrop-filter: blur(4px);
-    border: 1px solid rgba(255,255,255,0.1);
-    transition: all 0.2s;
-  }
-  .contact-card:hover {
-    border-color: #3b82f6;
-    background: rgba(59,130,246,0.08);
-  }
-  .feature-icon {
-    background: rgba(59,130,246,0.15);
-    backdrop-filter: blur(4px);
-  }
-  .map-container iframe {
-    border-radius: 24px;
-    filter: grayscale(20%) contrast(90%);
-  }
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #111;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #3b82f6;
-    border-radius: 6px;
-  }
-  /* Placeholder for removed images */
-  .img-placeholder {
-    background: linear-gradient(135deg, #1e1e2a, #0a0a0f);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 200px;
-  }
-</style>
+  </script>
+
+  <!-- CSS & Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #050505;
+      color: #ecedee;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    .glass-card {
+      background: rgba(20, 20, 30, 0.65);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(59,130,246,0.25);
+      border-radius: 28px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+    .glass-nav {
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(59,130,246,0.5);
+    }
+    .neon-text { text-shadow: 0 0 6px rgba(59,130,246,0.7), 0 0 12px rgba(37,99,235,0.4); }
+    .btn-primary {
+      background: linear-gradient(95deg, #2563eb 0%, #1e3a8a 100%);
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: none;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 25px -5px rgba(37,99,235,0.5); }
+    .btn-outline-light {
+      border: 1.5px solid rgba(255,255,255,0.3);
+      background: rgba(0,0,0,0.3);
+      backdrop-filter: blur(4px);
+    }
+    .btn-outline-light:hover { background: white; color: black; border-color: white; }
+    .section-title {
+      background: linear-gradient(135deg, #f8f9fa 20%, #93c5fd 80%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .zim-pattern { background-image: repeating-linear-gradient(45deg, rgba(59,130,246,0.02) 0px, rgba(59,130,246,0.02) 2px, transparent 2px, transparent 8px); }
+    .reveal { opacity: 0; transform: translateY(42px); transition: opacity 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.1), transform 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.1); }
+    .reveal.active { opacity: 1; transform: translateY(0); }
+    .contact-card { background: rgba(15, 15, 20, 0.8); backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,0.1); transition: all 0.2s; }
+    .contact-card:hover { border-color: #3b82f6; background: rgba(59,130,246,0.08); }
+    .feature-icon { background: rgba(59,130,246,0.15); backdrop-filter: blur(4px); }
+    .map-container iframe { border-radius: 24px; filter: grayscale(20%) contrast(90%); width: 100%; height: 250px; border: 0; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #111; }
+    ::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 6px; }
+    .img-placeholder {
+      background: linear-gradient(135deg, #1e1e2a, #0a0a0f);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 200px;
+    }
+    /* Blue "B" logo styling */
+    .logo-b {
+      display: inline-block;
+      width: 2.5rem;
+      height: 2.5rem;
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+      border-radius: 8px;
+      color: white;
+      font-weight: 900;
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      text-align: center;
+      box-shadow: 0 0 12px rgba(59,130,246,0.5);
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+  </style>
 </head>
 <body class="antialiased zim-pattern">
 
-<!-- STATIC NAVIGATION (unified) -->
-<nav class="glass-nav w-full py-3 px-6 md:px-10">
+<!-- NAVIGATION with Blue "B" Logo -->
+<nav class="glass-nav w-full py-3 px-6 md:px-10" role="navigation" aria-label="Main navigation">
   <div class="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-3">
     <div class="flex items-center gap-2">
-      <i class="fas fa-dragon text-3xl text-blue-500 neon-text"></i>
-      <span class="text-2xl font-extrabold tracking-tighter bg-gradient-to-r from-white via-gray-300 to-blue-400 bg-clip-text text-transparent">BASATECH</span>
+      <!-- Blue "B" Logo -->
+      <span class="logo-b">B</span>
+      <span class="text-2xl font-extrabold tracking-tighter bg-gradient-to-r from-white via-gray-300 to-blue-400 bg-clip-text text-transparent">ASATECH</span>
       <span class="hidden md:inline-block text-xs text-gray-400 ml-1">®</span>
     </div>
     <div class="flex flex-wrap justify-center gap-4 md:gap-6 text-sm font-semibold uppercase tracking-wide">
       <a href="#home" class="hover:text-blue-400 transition">Home</a>
       <a href="#core" class="hover:text-blue-400 transition">Core Services</a>
       <a href="#complimentary" class="hover:text-blue-400 transition">Complimentary</a>
-      <a href="#crayfish" class="hover:text-blue-400 transition">Crayfish</a>
+      <a href="#crayfish" class="hover:text-blue-400 transition">Seafood</a>
       <a href="#booking" class="hover:text-blue-400 transition">Book Tattoo</a>
       <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
     </div>
     <a href="https://wa.me/263786050237" target="_blank" class="hidden md:flex items-center gap-2 bg-blue-700/80 px-4 py-2 rounded-full text-sm font-semibold backdrop-blur-sm border border-blue-500/40 hover:bg-blue-800 transition">
-      <i class="fab fa-whatsapp"></i> Chat Now
+      <i class="fab fa-whatsapp" aria-hidden="true"></i> Chat Now
     </a>
   </div>
 </nav>
 
-<!-- HERO SECTION – no background image -->
+<!-- HERO SECTION (H1) – optimized keywords -->
 <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
   <div class="absolute inset-0 z-0 bg-black"></div>
   <div class="relative z-10 text-center max-w-5xl px-6 md:px-12">
     <h1 class="text-5xl md:text-7xl font-black tracking-tighter">
       <span class="bg-gradient-to-r from-blue-400 via-blue-600 to-gray-200 bg-clip-text text-transparent">BASATECH</span><br>
-      <span class="text-white neon-text">Innovation Beyond Boundaries</span>
+      <span class="text-white neon-text">Websites • Tattoos • Seafood • Portraits</span>
     </h1>
-    <p class="text-lg md:text-xl text-gray-300 mt-4 max-w-2xl mx-auto">Web Apps • Insurance • Tattoo Studio • Australian Crayfish • Creative Services</p>
+    <p class="text-lg md:text-xl text-gray-300 mt-4 max-w-2xl mx-auto">
+      <strong>Websites in Zimbabwe</strong> • <strong>Tattoos in Gweru</strong> • <strong>Seafood in Gweru</strong> • <strong>Canvas Portraits in Zimbabwe</strong>
+    </p>
+    <p class="text-md text-gray-400 mt-2">Web apps, ZINARA & ZBC insurance, printing & art – all under one roof.</p>
     <div class="flex flex-wrap justify-center gap-5 mt-10">
       <a href="#core" class="btn-primary px-8 py-3 rounded-full text-white font-bold shadow-xl transition-all">✧ Explore Services</a>
       <a href="#complimentary" class="btn-outline-light px-8 py-3 rounded-full text-white font-semibold transition-all">✦ Tattoo & Art</a>
-      <a href="https://wa.me/263786050237?text=Hello%20BASATECH%2C%20I%20need%20assistance" target="_blank" class="bg-white/10 backdrop-blur-sm border border-blue-400 px-8 py-3 rounded-full text-white font-semibold hover:bg-blue-800 transition-all flex items-center gap-2"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+      <a href="https://wa.me/263786050237?text=Hello%20BASATECH%2C%20I%20need%20assistance" target="_blank" class="bg-white/10 backdrop-blur-sm border border-blue-400 px-8 py-3 rounded-full text-white font-semibold hover:bg-blue-800 transition-all flex items-center gap-2"><i class="fab fa-whatsapp" aria-hidden="true"></i> Chat on WhatsApp</a>
     </div>
   </div>
-  <div class="absolute bottom-8 left-0 right-0 text-center animate-bounce"><i class="fas fa-chevron-down text-blue-400 text-2xl"></i></div>
+  <div class="absolute bottom-8 left-0 right-0 text-center animate-bounce"><i class="fas fa-chevron-down text-blue-400 text-2xl" aria-hidden="true"></i></div>
 </section>
 
-<!-- CORE SERVICES: Web Apps & Insurance -->
+<!-- CORE SERVICES (H2) – Websites in Zimbabwe + Insurance -->
 <section id="core" class="py-28 px-6 relative">
   <div class="max-w-7xl mx-auto text-center">
     <div class="reveal">
       <span class="text-blue-500 font-semibold tracking-wider text-sm uppercase bg-blue-500/10 px-4 py-1 rounded-full">core expertise</span>
-      <h2 class="text-4xl md:text-6xl font-bold mt-4 mb-6">Web Apps & <span class="text-blue-400">Insurance Specialists</span></h2>
-      <p class="text-gray-400 max-w-2xl mx-auto mb-16">Powerful digital solutions and seamless compliance — the backbone of modern business in Zimbabwe.</p>
+      <h2 class="text-4xl md:text-6xl font-bold mt-4 mb-6"><span class="text-blue-400">Websites in Zimbabwe</span> & Insurance</h2>
+      <p class="text-gray-400 max-w-2xl mx-auto mb-16">Professional <strong>websites in Zimbabwe</strong>, custom web apps, and seamless ZINARA & ZBC licensing for businesses across the nation.</p>
     </div>
     <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+      <!-- Web Apps -->
       <div class="glass-card rounded-3xl p-8 text-left transition-all reveal group">
-        <div class="flex items-center gap-4 mb-5"><div class="w-14 h-14 rounded-2xl feature-icon flex items-center justify-center text-3xl">💻</div><h3 class="text-3xl font-bold">Web Apps & Systems</h3></div>
-        <p class="text-gray-300 leading-relaxed mb-5">Custom web applications, mobile-ready platforms, and enterprise systems tailored to Zimbabwean businesses. From inventory management to client portals.</p>
-        <ul class="space-y-2 text-gray-400 text-sm"><li>✓ Custom CRM & ERP Systems</li><li>✓ E-commerce & Payment Integration</li><li>✓ Mobile-Friendly Dashboards</li><li>✓ Ongoing Support & Maintenance</li></ul>
+        <div class="flex items-center gap-4 mb-5"><div class="w-14 h-14 rounded-2xl feature-icon flex items-center justify-center text-3xl" aria-hidden="true">💻</div><h3 class="text-3xl font-bold">Websites & Apps</h3></div>
+        <p class="text-gray-300 leading-relaxed mb-5">We build modern, fast, and mobile‑friendly <strong>websites in Zimbabwe</strong> – from business landing pages to full‑featured e‑commerce platforms.</p>
+        <ul class="space-y-2 text-gray-400 text-sm"><li>✓ Custom Web Design & Development</li><li>✓ E‑commerce & Payment Integration</li><li>✓ CRM & ERP Systems</li><li>✓ Ongoing Support & Maintenance</li></ul>
         <div class="mt-6 inline-block bg-blue-500/20 px-4 py-2 rounded-full text-sm font-semibold text-blue-300">📞 Contact for custom quote</div>
       </div>
+      <!-- Insurance -->
       <div class="glass-card rounded-3xl p-8 text-left transition-all reveal group">
-        <div class="flex items-center gap-4 mb-5"><div class="w-14 h-14 rounded-2xl feature-icon flex items-center justify-center text-3xl">🛡️</div><h3 class="text-3xl font-bold">Insurance Services</h3></div>
-        <p class="text-gray-300 leading-relaxed mb-5">Fast, reliable processing for ZINARA and ZBC licences. We handle paperwork so you stay compliant without stress.</p>
-        <ul class="space-y-2 text-gray-400 text-sm"><li>✓ ZINARA Vehicle Licensing & Road Permits</li><li>✓ ZBC Television & Radio Receiver Licences</li><li>✓ Same-day Processing Available</li><li>✓ Fleet & Corporate Discounts</li></ul>
+        <div class="flex items-center gap-4 mb-5"><div class="w-14 h-14 rounded-2xl feature-icon flex items-center justify-center text-3xl" aria-hidden="true">🛡️</div><h3 class="text-3xl font-bold">Insurance Licensing</h3></div>
+        <p class="text-gray-300 leading-relaxed mb-5">Fast, reliable processing for <strong>ZINARA</strong> and <strong>ZBC</strong> licences. We handle the paperwork so you stay compliant without stress.</p>
+        <ul class="space-y-2 text-gray-400 text-sm"><li>✓ ZINARA Vehicle Licensing & Road Permits</li><li>✓ ZBC Television & Radio Receiver Licences</li><li>✓ Same‑day Processing Available</li><li>✓ Fleet & Corporate Discounts</li></ul>
         <div class="mt-6 inline-block bg-blue-500/20 px-4 py-2 rounded-full text-sm font-semibold text-blue-300">Call for a quick quote</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- COMPLIMENTARY SERVICES (including Tattoo Studio, Printing, Art) - all images removed -->
+<!-- COMPLIMENTARY SERVICES (H2) – Tattoos in Gweru, Portraits, Printing -->
 <section id="complimentary" class="py-20 px-6 border-t border-white/5 bg-gradient-to-b from-black to-gray-950">
   <div class="max-w-7xl mx-auto text-center">
     <div class="reveal">
-      <span class="text-cyan-400 text-sm uppercase bg-cyan-500/10 px-4 py-1 rounded-full">complimentary offerings</span>
-      <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-6">Creative & <span class="text-cyan-400">Lifestyle Services</span></h2>
-      <p class="text-gray-400 max-w-2xl mx-auto mb-12">Tattoo studio, fine art, branding — all under one roof.</p>
+      <span class="text-cyan-400 text-sm uppercase bg-cyan-500/10 px-4 py-1 rounded-full">creative & lifestyle</span>
+      <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-6"><span class="text-cyan-400">Tattoos in Gweru</span> & Canvas Portraits</h2>
+      <p class="text-gray-400 max-w-2xl mx-auto mb-12">Premium <strong>tattoos in Gweru</strong>, custom <strong>canvas portraits in Zimbabwe</strong>, and professional printing services.</p>
     </div>
     <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <!-- Tattoo Studio Card (no image) -->
+      <!-- Tattoo -->
       <div class="glass-card rounded-2xl overflow-hidden transition-all reveal group">
-        <div class="img-placeholder h-56 flex flex-col items-center justify-center text-blue-400">
-          <i class="fas fa-dragon text-5xl mb-2"></i>
-          <span class="text-sm">Tattoo portfolio</span>
-        </div>
-        <div class="p-6 text-left">
-          <div class="flex items-center gap-3 mb-2"><span class="text-3xl">🖤</span><h4 class="text-xl font-bold">BASATECH Tattoo Studio</h4></div>
-          <p class="text-gray-400 text-sm">Premium custom tattoos by Brian. Black & grey, color, cover-ups, fine line. “Ink Beyond Limits”.</p>
-          <div class="mt-3 flex gap-2"><a href="#booking" class="text-blue-400 text-sm font-semibold">Book appointment →</a><a href="https://instagram.com/barrkigroup" target="_blank" class="text-blue-400 text-sm">View portfolio</a></div>
-        </div>
+        <div class="img-placeholder h-56 flex flex-col items-center justify-center text-blue-400"><i class="fas fa-dragon text-5xl mb-2" aria-hidden="true"></i><span class="text-sm">Tattoo studio</span></div>
+        <div class="p-6 text-left"><div class="flex items-center gap-3 mb-2"><span class="text-3xl" aria-hidden="true">🖤</span><h3 class="text-xl font-bold">BASATECH Tattoo Studio</h3></div><p class="text-gray-400 text-sm">Expert <strong>tattoos in Gweru</strong> by Brian – custom designs, black & grey, colour, cover‑ups, fine line. “Ink Beyond Limits”.</p><div class="mt-3 flex gap-2"><a href="#booking" class="text-blue-400 text-sm font-semibold">Book appointment →</a><a href="https://instagram.com/barrkigroup" target="_blank" class="text-blue-400 text-sm">View portfolio</a></div></div>
       </div>
-      <!-- Printing Card (no image) -->
+      <!-- Portraits -->
       <div class="glass-card rounded-2xl overflow-hidden transition-all reveal group">
-        <div class="img-placeholder h-56 flex flex-col items-center justify-center text-cyan-400">
-          <i class="fas fa-print text-5xl mb-2"></i>
-          <span class="text-sm">Printing & branding</span>
-        </div>
-        <div class="p-6 text-left"><div class="flex items-center gap-3 mb-2"><span class="text-3xl">🖨️</span><h4 class="text-xl font-bold">Printing & Branding</h4></div><p class="text-gray-400 text-sm">Flyers, banners, business cards, full brand identity. Nationwide delivery.</p></div>
+        <div class="img-placeholder h-56 flex flex-col items-center justify-center text-purple-400"><i class="fas fa-paintbrush text-5xl mb-2" aria-hidden="true"></i><span class="text-sm">Canvas portraits</span></div>
+        <div class="p-6 text-left"><div class="flex items-center gap-3 mb-2"><span class="text-3xl" aria-hidden="true">🎨</span><h3 class="text-xl font-bold">Canvas Portraits</h3></div><p class="text-gray-400 text-sm">Custom <strong>canvas portraits in Gweru</strong> and across Zimbabwe – pencil, pastel, and mixed‑media commissions. Perfect for gifts and memorials.</p></div>
       </div>
-      <!-- Art Studio Card (no image) -->
+      <!-- Printing -->
       <div class="glass-card rounded-2xl overflow-hidden transition-all reveal group">
-        <div class="img-placeholder h-56 flex flex-col items-center justify-center text-purple-400">
-          <i class="fas fa-paintbrush text-5xl mb-2"></i>
-          <span class="text-sm">Art studio</span>
-        </div>
-        <div class="p-6 text-left"><div class="flex items-center gap-3 mb-2"><span class="text-3xl">🎨</span><h4 class="text-xl font-bold">Art Studio</h4></div><p class="text-gray-400 text-sm">Custom pencil portraits, vinyl artwork, mixed-media commissions. Unique Zimbabwean art.</p></div>
+        <div class="img-placeholder h-56 flex flex-col items-center justify-center text-cyan-400"><i class="fas fa-print text-5xl mb-2" aria-hidden="true"></i><span class="text-sm">Printing & branding</span></div>
+        <div class="p-6 text-left"><div class="flex items-center gap-3 mb-2"><span class="text-3xl" aria-hidden="true">🖨️</span><h3 class="text-xl font-bold">Printing & Branding</h3></div><p class="text-gray-400 text-sm">High‑quality flyers, banners, business cards, and full brand identity – <strong>nationwide delivery</strong>.</p></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- AUSTRALIAN CRAYFISH SECTION – image removed -->
+<!-- SEAFOOD (H2) – Seafood in Gweru / Australian Crayfish -->
 <section id="crayfish" class="py-24 px-6 bg-gradient-to-b from-black to-zinc-950">
   <div class="max-w-6xl mx-auto text-center reveal">
-    <span class="text-amber-400/80 text-sm uppercase tracking-wider bg-white/5 px-4 py-1 rounded-full">exclusive import — Zimbabwe's finest</span>
+    <span class="text-amber-400/80 text-sm uppercase tracking-wider bg-white/5 px-4 py-1 rounded-full">exclusive import — seafood in Gweru</span>
     <h2 class="text-4xl md:text-6xl font-bold mt-5 mb-4">Australian <span class="text-amber-400">Crayfish</span></h2>
-    <p class="text-gray-300 max-w-2xl mx-auto mb-8">Premium, wild-caught Australian crayfish — delivered fresh to your table in Zimbabwe.</p>
+    <p class="text-gray-300 max-w-2xl mx-auto mb-8">Premium <strong>seafood in Gweru</strong> – wild‑caught Australian crayfish delivered fresh to your table in Zimbabwe.</p>
     <div class="grid md:grid-cols-2 gap-12 items-center">
-      <div class="rounded-3xl bg-black/40 img-placeholder h-96 flex flex-col items-center justify-center text-amber-400">
-        <i class="fas fa-fish fa-5x mb-4"></i>
-        <p class="text-sm">Australian Crayfish — premium seafood</p>
-      </div>
-      <div class="text-left space-y-5"><h3 class="text-3xl font-bold">Premium Quality, Sustainably Sourced</h3><p class="text-gray-300">Directly from Australian fisheries. Sweet, delicate meat — perfect for fine dining, weddings, or family meals.</p><ul class="space-y-2 text-gray-400"><li>✓ Live delivery Gweru & Harare</li><li>✓ Frozen & vacuum-sealed nationwide</li><li>✓ Restaurant & bulk supply</li></ul><div class="flex flex-wrap gap-4 pt-4"><button onclick="orderCrayfish()" class="btn-primary px-6 py-3 rounded-full font-bold">Order via WhatsApp →</button><button onclick="sendBulkInquiry()" class="border border-amber-500/50 px-6 py-3 rounded-full font-medium hover:bg-amber-500/10 transition">Bulk Inquiry</button></div></div>
+      <div class="rounded-3xl bg-black/40 img-placeholder h-96 flex flex-col items-center justify-center text-amber-400"><i class="fas fa-fish fa-5x mb-4" aria-hidden="true"></i><p class="text-sm">Australian Crayfish – premium seafood</p></div>
+      <div class="text-left space-y-5"><h3 class="text-3xl font-bold">Sustainably Sourced, Finest Quality</h3><p class="text-gray-300">Directly from Australian fisheries. Sweet, delicate meat – perfect for fine dining, weddings, or family meals in <strong>Gweru, Harare</strong>, and nationwide.</p><ul class="space-y-2 text-gray-400"><li>✓ Live delivery in Gweru & Harare</li><li>✓ Frozen & vacuum‑sealed for nationwide shipping</li><li>✓ Restaurant & bulk supply</li></ul><div class="flex flex-wrap gap-4 pt-4"><button onclick="orderCrayfish()" class="btn-primary px-6 py-3 rounded-full font-bold">Order via WhatsApp →</button><button onclick="sendBulkInquiry()" class="border border-amber-500/50 px-6 py-3 rounded-full font-medium hover:bg-amber-500/10 transition">Bulk Inquiry</button></div></div>
     </div>
   </div>
 </section>
 
-<!-- TATTOO BOOKING SECTION (dedicated, no image) -->
+<!-- TATTOO BOOKING (H2) – dedicated for tattoos in Gweru -->
 <section id="booking" class="py-20 px-6 max-w-7xl mx-auto">
   <div class="glass-card p-8 md:p-10 rounded-3xl">
-    <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">Book a <span class="text-blue-500">Tattoo Session</span></h2>
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">Book a <span class="text-blue-500">Tattoo in Gweru</span></h2>
     <p class="text-center text-gray-400 mb-6">With Brian – master artist. Secure your appointment via WhatsApp.</p>
     <form id="bookingForm" class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <input type="text" id="bookName" placeholder="Full Name" class="bg-black/50 border border-gray-600 rounded-xl p-3 focus:border-blue-500 outline-none" required>
@@ -250,79 +267,82 @@
       </select>
       <input type="date" id="bookDate" class="bg-black/50 border border-gray-600 rounded-xl p-3 text-gray-200">
       <textarea id="bookMsg" rows="2" placeholder="Describe your idea or placement..." class="md:col-span-2 bg-black/50 border border-gray-600 rounded-xl p-3"></textarea>
-      <button type="submit" class="md:col-span-2 btn-primary py-3 rounded-xl font-bold text-white flex items-center justify-center gap-2"><i class="fab fa-whatsapp"></i> Send Booking Request via WhatsApp</button>
+      <button type="submit" class="md:col-span-2 btn-primary py-3 rounded-xl font-bold text-white flex items-center justify-center gap-2"><i class="fab fa-whatsapp" aria-hidden="true"></i> Send Booking Request via WhatsApp</button>
     </form>
   </div>
 </section>
 
-<!-- ARTIST SPOTLIGHT (Tattoo) – phone number removed -->
+<!-- ARTIST SPOTLIGHT -->
 <section class="py-16 px-6 max-w-7xl mx-auto">
   <div class="glass-card p-6 md:p-8 rounded-3xl text-center">
-    <h3 class="text-2xl font-bold">Meet <span class="text-blue-500">Brian</span> – Tattoo Director</h3>
+    <h3 class="text-2xl font-bold">Meet <span class="text-blue-500">Brian</span> – Tattoo Artist, Gweru</h3>
     <div class="flex justify-center gap-5 my-4">
-      <a href="https://instagram.com/barrkigroup" target="_blank" class="text-2xl text-gray-300 hover:text-blue-400"><i class="fab fa-instagram"></i></a>
-      <a href="https://tiktok.com/@barrkigroup" target="_blank" class="text-2xl text-gray-300 hover:text-blue-400"><i class="fab fa-tiktok"></i></a>
-      <a href="https://wa.me/263786050237" class="text-2xl text-gray-300 hover:text-blue-400"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://instagram.com/barrkigroup" target="_blank" class="text-2xl text-gray-300 hover:text-blue-400" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://tiktok.com/@barrkigroup" target="_blank" class="text-2xl text-gray-300 hover:text-blue-400" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a href="https://wa.me/263786050237" class="text-2xl text-gray-300 hover:text-blue-400" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
     </div>
-    <p class="text-gray-400">9+ years experience | Hyperrealism, blackwork, cover-ups | Consultations via WhatsApp</p>
-    <!-- phone number removed -->
+    <p class="text-gray-400">9+ years experience | Hyperrealism, blackwork, cover‑ups | Consultations via WhatsApp</p>
   </div>
 </section>
 
-<!-- QUOTE SECTION for Business Services -->
+<!-- QUOTE SECTION -->
 <section class="py-24 px-6 relative overflow-hidden">
   <div class="absolute inset-0 bg-gradient-to-r from-blue-950/30 via-black to-blue-950/20"></div>
-  <div class="max-w-4xl mx-auto text-center relative z-10 glass-modern p-10 md:p-14 rounded-3xl border border-blue-500/20">
-    <div class="reveal"><h2 class="text-4xl md:text-5xl font-bold text-white mb-3">Get a Quick Quote</h2><p class="text-gray-300 mb-8">Web app, insurance, crayfish, printing — we'll respond within minutes.</p>
-    <div class="w-full max-w-md mx-auto"><select id="serviceSelect" class="w-full bg-black/70 border border-gray-600 rounded-xl p-4 text-white focus:outline-none focus:border-blue-500"><option value="Web App Development">💻 Web App / System Development</option><option value="Insurance (ZINARA/ZBC)">🛡️ Insurance: ZINARA / ZBC Licence</option><option value="Australian Crayfish">🦞 Australian Crayfish</option><option value="Printing & Branding">🖨️ Printing & Branding</option><option value="Art Studio Commission">🎨 Art Studio Portrait</option><option value="Tattoo Appointment">🖤 Tattoo Appointment (Brian)</option></select></div>
-    <button onclick="sendBusinessQuote()" class="btn-primary px-10 py-4 rounded-full text-lg font-bold flex items-center justify-center gap-3 mx-auto mt-8"><i class="fab fa-whatsapp"></i> Send via WhatsApp</button></div>
+  <div class="max-w-4xl mx-auto text-center relative z-10 glass-card p-10 md:p-14 rounded-3xl border border-blue-500/20">
+    <div class="reveal"><h2 class="text-4xl md:text-5xl font-bold text-white mb-3">Get a Quick Quote</h2><p class="text-gray-300 mb-8">Websites, insurance, seafood, portraits, or tattoos – we'll respond within minutes.</p>
+    <div class="w-full max-w-md mx-auto"><select id="serviceSelect" class="w-full bg-black/70 border border-gray-600 rounded-xl p-4 text-white focus:outline-none focus:border-blue-500"><option value="Websites in Zimbabwe">💻 Websites & Web Apps</option><option value="Insurance (ZINARA/ZBC)">🛡️ Insurance: ZINARA / ZBC Licence</option><option value="Seafood in Gweru">🦞 Australian Crayfish</option><option value="Printing & Branding">🖨️ Printing & Branding</option><option value="Canvas Portraits in Zimbabwe">🎨 Canvas Portraits</option><option value="Tattoo in Gweru">🖤 Tattoo Appointment (Brian)</option></select></div>
+    <button onclick="sendBusinessQuote()" class="btn-primary px-10 py-4 rounded-full text-lg font-bold flex items-center justify-center gap-3 mx-auto mt-8"><i class="fab fa-whatsapp" aria-hidden="true"></i> Send via WhatsApp</button></div>
   </div>
 </section>
 
-<!-- CONTACT & LOCATION (Unified) – Brian's number removed from contact card -->
+<!-- CONTACT & LOCATION (H2) – updated map with your specific location -->
 <section id="contact" class="py-20 px-6 border-t border-white/5">
   <div class="max-w-6xl mx-auto text-center mb-12 reveal">
     <span class="text-blue-400 text-sm uppercase tracking-wide">Reach out</span>
     <h2 class="text-4xl font-bold mt-2">Talk to Our Team</h2>
+    <p class="text-gray-400 mt-2">Based in <strong>Gweru, Zimbabwe</strong> – serving the entire nation.</p>
   </div>
   <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-    <!-- Brian card – number removed, only name and social -->
     <div class="contact-card rounded-2xl p-6 flex items-center gap-5 reveal"><div class="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-2xl font-bold">BR</div><div><h3 class="text-xl font-bold">Brian (Tattoo)</h3><p class="text-gray-300 text-sm">WhatsApp only</p><a href="https://wa.me/263786050237" target="_blank" class="text-blue-400 text-sm">Chat on WhatsApp →</a></div></div>
     <div class="contact-card rounded-2xl p-6 flex items-center gap-5 reveal"><div class="w-16 h-16 rounded-full bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center text-2xl font-bold">BA</div><div><h3 class="text-xl font-bold">Baki (Business)</h3><p class="text-gray-300 text-sm">+263 78 605 0237</p><a href="https://wa.me/263786050237" target="_blank" class="text-blue-400 text-sm">Chat →</a></div></div>
     <div class="contact-card rounded-2xl p-6 flex items-center gap-5 reveal"><div class="w-16 h-16 rounded-full bg-gradient-to-br from-cyan-500 to-cyan-600 flex items-center justify-center text-2xl font-bold">BE</div><div><h3 class="text-xl font-bold">Benjamin (Ops)</h3><p class="text-gray-300 text-sm">+263 78 263 7977</p><a href="https://wa.me/263782637977" target="_blank" class="text-blue-400 text-sm">Chat →</a></div></div>
   </div>
-  <div class="mt-16 text-center"><p class="text-gray-400 mb-3">🇿🇼 Follow @barrkigroup</p><div class="flex justify-center gap-8 flex-wrap"><a href="https://instagram.com/barrkigroup" target="_blank" class="text-gray-300 hover:text-pink-500 text-lg"><i class="fab fa-instagram mr-1"></i> Instagram</a><a href="https://facebook.com/barrkigroup" target="_blank" class="text-gray-300 hover:text-blue-500"><i class="fab fa-facebook mr-1"></i> Facebook</a><a href="https://tiktok.com/@barrkigroup" target="_blank" class="text-gray-300 hover:text-white"><i class="fab fa-tiktok mr-1"></i> TikTok</a></div></div>
+  <div class="mt-16 text-center"><p class="text-gray-400 mb-3">🇿🇼 Follow @barrkigroup</p><div class="flex justify-center gap-8 flex-wrap"><a href="https://instagram.com/barrkigroup" target="_blank" class="text-gray-300 hover:text-pink-500 text-lg" aria-label="Instagram"><i class="fab fa-instagram mr-1"></i> Instagram</a><a href="https://facebook.com/barrkigroup" target="_blank" class="text-gray-300 hover:text-blue-500" aria-label="Facebook"><i class="fab fa-facebook mr-1"></i> Facebook</a><a href="https://tiktok.com/@barrkigroup" target="_blank" class="text-gray-300 hover:text-white" aria-label="TikTok"><i class="fab fa-tiktok mr-1"></i> TikTok</a></div></div>
   <div class="mt-12 text-center text-gray-500 text-sm">📍 Shop 24 Bahadur Centre, Gweru, Zimbabwe | Mon-Fri: 8am – 5pm</div>
-  <div class="mt-8 glass-card p-3 map-container max-w-3xl mx-auto"><iframe src="https://maps.google.com/maps?q=Shop%2024%20Bahadur%20Centre%20Gweru%20Zimbabwe&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="250" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy"></iframe></div>
+  <!-- Updated Google Maps Embed with your specific location -->
+  <div class="mt-8 glass-card p-3 map-container max-w-3xl mx-auto">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3795.834783566259!2d29.8181!3d-19.4631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI3JzQ3LjIiUyAyOcKwNDknMDUuMiJF!5e0!3m2!1sen!2s!4v1710000000000" 
+            width="100%" 
+            height="250" 
+            style="border:0; border-radius: 20px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="BASATECH location at Shop 24 Bahadur Centre, Gweru, Zimbabwe">
+    </iframe>
+  </div>
 </section>
 
 <footer class="py-8 text-center border-t border-white/5 bg-black/40">
-  <p class="text-gray-500 text-sm">© 2026 BASATECH — Web Apps • Insurance • Tattoo Studio • Crayfish • Printing • Art • Proudly Zimbabwean 🇿🇼</p>
+  <p class="text-gray-500 text-sm">© 2026 BASATECH — Websites in Zimbabwe • Tattoos in Gweru • Seafood in Gweru • Canvas Portraits in Zimbabwe • Proudly Zimbabwean 🇿🇼</p>
 </footer>
 
 <script>
-  // Tattoo booking form
-  const bookingForm = document.getElementById('bookingForm');
-  if(bookingForm) {
-    bookingForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const name = document.getElementById('bookName').value.trim();
-      const phone = document.getElementById('bookPhone').value.trim();
-      const style = document.getElementById('bookStyle').value;
-      const date = document.getElementById('bookDate').value;
-      const msg = document.getElementById('bookMsg').value.trim();
-      if(!name || !phone) { alert("Please fill in name and phone number."); return; }
-      const whatsMsg = `🔮 *BASATECH Tattoo Booking* 🔮%0A👤 Name: ${name}%0A📞 Phone: ${phone}%0A🎨 Style: ${style}%0A📅 Date: ${date || 'Not specified'}%0A💬 Message: ${msg || 'No details'}%0A✨ *Ink Beyond Limits*`;
-      window.open(`https://wa.me/263786050237?text=${encodeURIComponent(whatsMsg)}`, '_blank');
-    });
-  }
+  // Booking form
+  document.getElementById('bookingForm')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('bookName').value.trim();
+    const phone = document.getElementById('bookPhone').value.trim();
+    const style = document.getElementById('bookStyle').value;
+    const date = document.getElementById('bookDate').value;
+    const msg = document.getElementById('bookMsg').value.trim();
+    if(!name || !phone) { alert("Please fill in name and phone number."); return; }
+    const whatsMsg = `🔮 *BASATECH Tattoo Booking* 🔮%0A👤 Name: ${name}%0A📞 Phone: ${phone}%0A🎨 Style: ${style}%0A📅 Date: ${date || 'Not specified'}%0A💬 Message: ${msg || 'No details'}%0A✨ *Ink Beyond Limits*`;
+    window.open(`https://wa.me/263786050237?text=${encodeURIComponent(whatsMsg)}`, '_blank');
+  });
 
-  function orderCrayfish() {
-    window.open(`https://wa.me/263786050237?text=${encodeURIComponent("Hello! I'd like to order Australian Crayfish. Please share availability & pricing.")}`, '_blank');
-  }
-  function sendBulkInquiry() {
-    window.open(`https://wa.me/263782637977?text=${encodeURIComponent("Hi Benjamin, I'm interested in bulk order of Australian Crayfish for business/event. Please advise.")}`, '_blank');
-  }
+  function orderCrayfish() { window.open(`https://wa.me/263786050237?text=${encodeURIComponent("Hello! I'd like to order Australian Crayfish (seafood in Gweru). Please share availability & pricing.")}`, '_blank'); }
+  function sendBulkInquiry() { window.open(`https://wa.me/263782637977?text=${encodeURIComponent("Hi Benjamin, I'm interested in bulk order of Australian Crayfish.")}`, '_blank'); }
   function sendBusinessQuote() {
     const select = document.getElementById('serviceSelect');
     const selected = select.options[select.selectedIndex].text;
